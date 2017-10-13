@@ -2,6 +2,12 @@
 <html>
 <head>
     <script type="text/javascript">
+console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
       console.log(true || false); // true
       console.log(true || true); // true
       console.log("string" || true); // string
@@ -16,6 +22,8 @@
       console.log(null || ""); // ""
       console.log(null || false); // false
       console.log("yes" || "no"); // "yes"
+}
+}
     </script>
 </head>
 <body>
