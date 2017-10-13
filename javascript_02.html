@@ -13,6 +13,13 @@
         document.getElementById("run").onclick = function() {
 
     <script type="text/javascript">
+
+console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
     var text1 = "æ»≥Á«œººø‰.";
     var text2 = 'æ»≥Á«œººø‰.';
 
@@ -32,8 +39,14 @@
     console.log(text4);
     console.log(text5);
     console.log(text6);
+<<<<<<< HEAD
   }
 }
+=======
+ }
+}
+
+>>>>>>> 4c13084f8ce738b472fc59e6b2587bba90aaa510
     </script>
 </head>
 <body>
